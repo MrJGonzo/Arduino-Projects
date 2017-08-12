@@ -24,7 +24,7 @@ int lastStateButton3 = 0;
 void setup() 
    {
        lcd.begin(16, 2);           
-       lcd.print("MATH GAME");  
+       lcd.print("GAME");  
      
         pinMode(button1, INPUT);
         pinMode(button2, INPUT);
