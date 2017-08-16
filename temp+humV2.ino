@@ -18,7 +18,7 @@ void setup() {
   dht.begin();
   
   // Print a message to the LCD.
-  lcd.print("Temp:  Humidity:");
+  lcd.print("Temp:  Humedad:");
 }
 
 void loop() {
@@ -29,17 +29,17 @@ void loop() {
   // read humidity
   float h = dht.readHumidity();
   //read temperature in Celsius 
-  float f = dht.readTemperature();
+  float t = dht.readTemperature();
 
-  //read temperature in Farenheit
+  //read temperature in Fahrenheit
   //float f = dht.readTemperature(true);
   
-  if (isnan(h) || isnan(f)) {
+  if (isnan(h) || isnan(t)) {
     lcd.print("ERROR");
     return;
   }
 
-  lcd.print(f);
+  lcd.print(t);
   lcd.setCursor(7,1);
   lcd.print(h);  
 }
