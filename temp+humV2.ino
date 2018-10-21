@@ -4,7 +4,7 @@
 #include <DHT.h>
 #include <Servo.h>
 
-#define DHTPIN 53 // set the DHT Pin
+#define DHTPIN 10 // set the DHT Pin
 #define DHTTYPE DHT22 // set the sensor type between DHT11 or DHT22
 
 #define I1 24  // Control pin 1 for motor 1
@@ -12,8 +12,8 @@
 #define E1 28  // Enable Pin for motor 1
 
 //Objects
-//LiquidCrystal lcd(2,3,4,5,6,7);
-LiquidCrystal lcd(33,31,29,27,25,23);
+LiquidCrystal lcd(7,6,5,4,3,2);
+//LiquidCrystal lcd(33,31,29,27,25,23);
 DHT dht(DHTPIN, DHTTYPE);
 Servo s1;
 
